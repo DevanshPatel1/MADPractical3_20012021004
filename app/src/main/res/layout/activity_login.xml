@@ -63,17 +63,11 @@
                     app:layout_constraintTop_toTopOf="parent"
                     tools:layout_editor_absoluteY="102dp">
 
-
-                    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-                    <!--                app:layout_constraintTop_toTopOf="@+id/materialCardView2"-->
-                    <!--                app:layout_constraintVertical_bias="0.0"-->
-                    <!--                tools:layout_editor_absoluteX="-66dp">-->
-
-                    <TextView
+                <TextView
                         android:id="@+id/textView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
                         android:padding="10dp"
                         android:paddingHorizontal="10dp"
                         android:paddingVertical="10dp"
@@ -81,58 +75,46 @@
                         android:textSize="30dp"
                         tools:layout_editor_absoluteX="20dp" />
 
-                    <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-                    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-                    <!--                    app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                    app:layout_constraintTop_toBottomOf="@id/image_guni" />-->
+                    <EditText
+                        android:id="@+id/edittext"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp"
+                        android:text="Email:"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toEndOf="parent"
+                        tools:layout_editor_absoluteY="10dp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp"
+                        android:text="Password:"
+                        android:textSize="30dp"
+                        tools:layout_editor_absoluteY="70dp" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:padding="10dp"
-                    android:paddingHorizontal="10dp"
-                    android:paddingVertical="10dp"
-                    android:text="Password:"
-                    android:textSize="30dp" />
-                <Button
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="150dp"
-                    android:padding="10dp"
-                    android:text="Login"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    tools:layout_editor_absoluteX="152dp" />
 
             </com.google.android.material.card.MaterialCardView>
 
-
-            <!--                    <TextView-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="Email"-->
-            <!--                        android:layout_margin="20dp"-->
-            <!--                        app:layout_constraintStart_toStartOf="parent"-->
-            <!--                        app:layout_constraintTop_toBottomOf="@id/email"-->
-            <!--                        app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                        android:id="@+id/passwd"-->
-            <!--                        android:paddingHorizontal="50dp"-->
-            <!--                        android:paddingVertical="20dp"-->
-            <!--                        android:textAlignment="gravity">-->
-
-            <!--                    </TextView>-->
-
-            <!--                    <Button-->
-            <!--                        android:layout_width="wrap_content"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:text="Login"-->
-            <!--                        app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                        app:layout_constraintStart_toStartOf="parent"-->
-            <!--                        app:layout_constraintTop_toTopOf="parent" />-->
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:padding="10dp"
+        android:text="Login"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
