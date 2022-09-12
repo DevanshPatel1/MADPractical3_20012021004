@@ -73,23 +73,13 @@
                         android:id="@+id/textView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="20"
-                        android:padding=""
+                        android:layout_margin="20dp"
+                        android:padding="10dp"
                         android:paddingHorizontal="10dp"
                         android:paddingVertical="10dp"
-                        android:text="Email"
+                        android:text="Email:"
                         android:textSize="30dp"
                         tools:layout_editor_absoluteX="20dp" />
-
-                    <Button
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="150dp"
-                        android:padding="10dp"
-                        android:text="Login"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        tools:layout_editor_absoluteX="152dp" />
 
                     <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
                     <!--                    app:layout_constraintEnd_toEndOf="parent"-->
@@ -99,13 +89,22 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="95dp"
-                    android:layout_margin="20"
-                    android:padding=""
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="10dp"
-                    android:text="Email"
+                    android:text="Password:"
                     android:textSize="30dp" />
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="150dp"
+                    android:padding="10dp"
+                    android:text="Login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteX="152dp" />
 
             </com.google.android.material.card.MaterialCardView>
 
