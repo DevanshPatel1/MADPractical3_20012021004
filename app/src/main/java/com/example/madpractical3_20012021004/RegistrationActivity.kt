@@ -1,6 +1,8 @@
 package com.example.madpractical3_20012021004
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
 import androidx.core.view.WindowCompat
 import com.example.madpractical3_20012021004.databinding.ActivityMainBinding
 import com.example.madpractical3_20012021004.databinding.ActivityRegistrationBinding
@@ -14,5 +16,19 @@ class RegistrationActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
+        binding.textview4.setOnClickListener {
+            Intent(this, LoginActivity::class.java).also {startActivity(it)}
+            binding.textview4.movementMethod = LinkMovementMethod.getInstance();
+        }
+
+        binding.bottomnavigationview.selectedItemId = R.id.bottom_nav_reg
+        binding.bottomnavigationview.setOnItemSelectedListener { it ->
+            when (it.itemId) {
+                R.id.bottom_nav_login -> {
+                    Intent(this, LoginActivity::class.java).also { startActivity(it) }
+                }
+            }
+            return@setOnItemSelectedListener true
+        }
     }
 }
