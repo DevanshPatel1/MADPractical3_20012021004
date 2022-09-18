@@ -16,9 +16,9 @@ class RegistrationActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
-        binding.textview4.setOnClickListener {
+        binding.textview5.setOnClickListener {
             Intent(this, LoginActivity::class.java).also {startActivity(it)}
-            binding.textview4.movementMethod = LinkMovementMethod.getInstance();
+            binding.textview5.movementMethod = LinkMovementMethod.getInstance();
         }
 
         binding.bottomnavigationview.selectedItemId = R.id.bottom_nav_reg
