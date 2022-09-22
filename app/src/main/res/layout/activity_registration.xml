@@ -42,9 +42,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginVertical="10dp"
-                android:elevation="15dp"
                 app:cardCornerRadius="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/guni_pink_logo">
+                app:cardElevation="5dp"
+                >
 
                 <LinearLayout
                     android:id="@+id/detail_constraint"
@@ -148,31 +148,47 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <Button
-                android:id="@+id/buttonregister"
-                android:layout_width="125dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginTop="-15dp"
-                android:layout_marginright="140dp"
-                android:text="Register" />
-            <TextView
-                android:id="@+id/textview4"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="25dp"
-                android:text="Do you have an account" />
+                android:orientation="vertical"
+                android:layout_marginTop="-45dp"
+                android:layout_marginBottom="80dp">
+                <Button
+                    android:id="@+id/loginbutton"
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:text="Register"
+                    android:textSize="19dp"
+                    app:cornerRadius="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center_horizontal" />
 
-            <TextView
-                android:id="@+id/textview5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="LOGIN"
-                android:textColor="@color/pink"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have an account?"
+                    android:textSize="17dp"
+                    android:layout_marginTop="30dp"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:textSize="17dp"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="-23dp">
+                </TextView>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
